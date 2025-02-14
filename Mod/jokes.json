@@ -1,0 +1,34 @@
+{
+  "jokes": {
+    "perma": [
+      "Your respawn button is now a gravestone.",
+      "Hope you said your goodbyes… to your loot.",
+      "Better luck in the afterlife!",
+      "Guess who’s playing spectator mode now?",
+      "You’re now officially part of the scenery.",
+      "Don’t worry, the ghosts will keep you company.",
+      "Your adventure ends here. Literally.",
+      "Might wanna start writing your memoirs… from the grave.",
+      "On the bright side, no more taxes!",
+      "You just unlocked Hardcore Mode… in real life.",
+      "Congratulations! You’ve reached the end credits.",
+      "Your inventory has been permanently donated to the living.",
+      "You are now a valued member of the undead community."
+    ],
+    "timeout": [
+      "You’ve been cryopodded—try again later!",
+      "You’re on a temporary tame cooldown. Maybe put some points into patience?",
+      "You’ve been tranquilized. Wait for the torpor to wear off!",
+      "Uh-oh, looks like you got too close to a Giga. Take a breather!",
+      "You’ve been sent to the Obelisk for a timeout. Don’t touch the upload timer!",
+      "Your chat privileges have been raided—better rebuild later!",
+      "You got meshed… into silence. RIP.",
+      "You’ve been dino-wiped. Try respawning in a few minutes!",
+      "You’re now in PvE mode—no talking, just waiting!",
+      "Hope you brought some Stimberries, ‘cause that timeout torpor is kicking in!",
+      "Consider this your forced hibernation. Be back soon!",
+      "You got kited into a timeout—watch out next time!",
+      "You’ve been sent back to the server selection screen. See you soon!"
+    ]
+  }
+}
