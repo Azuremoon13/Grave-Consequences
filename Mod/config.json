@@ -2,22 +2,22 @@
 	"player":
 	{
 		"ban": false,
-		"forcenewchar": false,
 		"forcespectator": true,
+		"forcenewchar": false,
 		"kickduration": 0
 	},
 	"dino":
 	{
 		"ban": false,
-		"forcenewchar": true,
 		"forcespectator": false,
+		"forcenewchar": true,
 		"kickduration": 0
 	},
 	"enviroment":
 	{
 		"ban": false,
-		"forcenewchar": false,
 		"forcespectator": false,
+		"forcenewchar": false,
 		"kickduration":600
 	},
 	"spawnprotection": 900
