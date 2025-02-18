@@ -5,7 +5,6 @@ import io.ktor.server.application.*
 import io.ktor.server.engine.embeddedServer
 import io.ktor.server.netty.Netty
 
-import io.ktor.server.application.*
 import io.ktor.util.*
 
 private val ConfigKey = AttributeKey<Config>("config")
@@ -15,7 +14,7 @@ var Application.configData: Config
     set(value) { attributes.put(ConfigKey, value) }
 
 
-fun main(args: Array<String>) {
+fun main() {
     val config = ConfigManager.config
     val port = config.port
 
