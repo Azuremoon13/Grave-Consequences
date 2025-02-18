@@ -5,6 +5,7 @@ import kotlinx.serialization.Serializable
 @Serializable
 data class Payload(
     val id: String,
-    val restrictedUntil: Int,
     val clusterKey: String,
+    val restrictedUntil: Int,
+    val applyEnforcement: Boolean
 )
