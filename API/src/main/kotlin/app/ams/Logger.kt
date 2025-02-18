@@ -13,7 +13,6 @@ object GCLogger {
     }
 
     fun debug(message: String) {
-        println(isDebugEnabled)
         if (isDebugEnabled) {
             logger.debug(message)
         }
