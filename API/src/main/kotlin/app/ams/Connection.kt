@@ -7,8 +7,9 @@ class Connection (
     val session: WebSocketSession
 ){
     companion object{
-        const val PAYLOADVERSION = 1
+        const val PAYLOADVERSION = 2
     }
+
     enum class HandshakeResponse(
         val response: String
     ){
