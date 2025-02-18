@@ -8,7 +8,6 @@ import io.ktor.server.plugins.*
 import io.ktor.server.response.*
 import io.ktor.server.routing.*
 import io.ktor.server.websocket.*
-import io.ktor.util.*
 import io.ktor.websocket.*
 import kotlinx.serialization.json.Json
 import kotlin.time.Duration.Companion.seconds
@@ -50,10 +49,11 @@ fun Application.configureSockets() {
                                 } else {
                                     var WSCounter = 0
                                     WSConnections.forEach { ws ->
-                                        if ((ws.clusterKey == WS.clusterKey || !config.separateByClusterKey) && isValidPayload(payload))
+                                        if ((ws.clusterKey == WS.clusterKey || !config.separateByClusterKey) && (ws != WS || config.relayToSelf) && isValidPayload(payload)) {
                                             ws.session.send(Frame.Text(payload))
                                             GCLogger.debug("Sent ${ws.name} payload of: $payload")
                                             WSCounter += 1
+                                        }
                                     }
                                     if (WSCounter > 0) {
                                         GCLogger.info("Sent payload to $WSCounter client(s)")
